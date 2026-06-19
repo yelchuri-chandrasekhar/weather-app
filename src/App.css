@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border-radius: 16px;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card h2 {
+  color: #0984e3;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.form-control {
+  border-radius: 8px 0 0 8px;
+  border: 2px solid #74b9ff;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+}
+
+.form-control:focus {
+  border-color: #0984e3;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #74b9ff, #0984e3);
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0984e3, #74b9ff);
+  transform: scale(1.02);
+}
+
+.weather-card {
+  padding: 10px;
+}
+
+.city-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0984e3;
+}
+
+.condition {
+  font-size: 1.1rem;
+  color: #636e72;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.info-box {
+  background: #f8f9ff;
+  border-radius: 12px;
+  padding: 12px 8px;
+}
+
+.info-label {
+  font-size: 0.8rem;
+  color: #636e72;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  color: #2d3436;
+  font-weight: 700;
+  margin-bottom: 0;
 }
